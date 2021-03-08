@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/index_js.js"></script>
+    <script src="js/button_js.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index_css.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
     <title>MyHome</title>
 </head>
 <body>
@@ -15,7 +17,13 @@
 		<div class="fullsection full1" pageNum="1">
             <div id="nav">
                 <div id="left_nav">
-                    <img src="img/menu.png" width="50" height="50">
+                    <img src="img/menu.png" width="50" height="50" style="float: left;" id="hamburger">
+                    <div class="SearchBox">
+                        <form action="">
+                            <input type="search" placeholder="search" id="Search">
+                            <i class="fas fa-search" id="searchIcon"></i>
+                        </form>
+                    </div>
                 </div>
                 <div id="right_nav">
                     <ul>
