@@ -7,7 +7,6 @@ $(document).ready(function(){
 //fullpage슬라이드를 위한 js
 function fullset(){
 	var pageindex = $("#fullpage > .fullsection").length; //fullpage 안에 섹션이(.fullsection) 몇개인지 확인하기
-	console.log(pageindex);
 	for(var i=1;i<=pageindex;i++){ // 옆에 점 생성
 		$("#fullpage > .quick > ul").append("<li></li>");
 	}
@@ -30,7 +29,7 @@ function fullset(){
 			}
 			if(page.index() > 0){ //첫번째 페이지가 아닐때 (index는 0부터 시작임)
 				page=page.index()-1;
-				$("#fullpage").animate({"top": -pagelength + "px"},1000, "swing");
+				$("#fullpage").animate({"top": -pagelength + "px"},500, "swing");
 			}else{
 				alert("첫번째페이지 입니다.");
 			}	
@@ -50,13 +49,14 @@ function fullset(){
 					//ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
 					pagelength += $(".full"+i).height();
 				}
-				$("#fullpage").animate({"top": -pagelength + "px"},1000, "swing");
+				$("#fullpage").animate({"top": -pagelength + "px"},500, "swing");
 			}
 			else{ // 현재 마지막 페이지 일때는
 				alert("마지막 페이지 입니다!");
 			};		
 			
 		}
+		// colorChange();
 	});
 	$(window).resize(function(){ 
 		//페이지가 100%이기때문에 브라우저가 resize 될때마다 스크롤 위치가 그대로 남아있는것을 방지하기 위해
@@ -88,3 +88,16 @@ function quickClick(){
 		return false;
 	});
 }
+// //슬라이드 시 색 바뀜
+// function colorChange(){
+// 	var aa = $(".quick ul").children().eq(1);
+// 	if(aa.is(".on")){
+// 		$(".full2").animate({
+// 			"opacity":"1"
+// 		},500);
+// 	}else{
+// 		$(".full2").animate({
+// 			"opacity":"0"
+// 		},500);
+// 	}
+// }
