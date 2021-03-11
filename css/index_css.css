@@ -134,6 +134,7 @@ ul, li{
 }
 #left_nav img{
     cursor: pointer;
+    padding-left: 10px;
 }
 #right_nav{
     width: 50%;
