@@ -7,6 +7,7 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/index_js.js"></script>
     <script src="js/button_js.js"></script>
+    <script src="js/second_js.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index_css.css">
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
     <title>MyHome</title>
@@ -28,61 +29,112 @@
                 <div id="right_nav">
                     <ul>
                         <li><h3>PICTURE</h3></li>
-                        <li><h3>PRATICE</h3></li>
+                        <li><h3>NOTE</h3></li>
                         <li><h3>LOGIN</h3></li>
                     </ul>
                 </div>
             </div>
-            <span>나만의 공간, 나만의 낙서장</span>
-            <p>무료 사진 공유, 디자인 연습 및 기능 연습으로 만든 공간입니다.</p>
+            <div id="full1_content">
+                <span>나만의 공간, 나만의 노트</span>
+                <p>무료 사진 공유, 디자인 연습 및 기능 연습으로 만든 공간입니다.</p>    
+            </div>
         </div>
 
-		<div class="fullsection full2" id="second" pageNum="2">
+		<div class="fullsection full2" pageNum="2">
             <div id="picture">
-                <ul class="p_list">
-                    <li>
-                        <img src="img/bg1.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg2.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg3.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg4.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg5.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg1.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg2.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg3.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg4.jpg">
-                    </li>
-                    <li>
-                        <img src="img/bg5.jpg">
-                    </li>
-                </ul>
+                <div class="active">
+                    <img src="img/bg1.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg2.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg3.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg4.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg5.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg6.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg7.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg8.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg9.jpg">
+                </div>
+                <div class="active">
+                    <img src="img/bg10.jpg">
+                </div>
             </div>
             <span>PICTURE</span>
-            <p>사진을 클릭하시면 좀 더 큰 이미지를 볼 수 있습니다.</p>
+            <span class="more">MORE →</span>
         </div>
 
 		<div class="fullsection full3" pageNum="3">
-            <span>3 PAGE</span>
+            <div id="full3_content">
+                <div id="left_content">
+                    <h2 class="f3_Title">NOTE</h2>
+                    <!-- <hr class="f3_Title_under"> -->
+                    <p>로그인을 활용하여 메모를 남기세요<br>
+                        이곳은 누구나 활용할 수 있는 장소입니다</p>
+                </div>
+                <div id="right_content">
+                    <!-- <table id="f3_table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Title</th>
+                                <th>View</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>안녕하세요 테스트입니다.</td>
+                                <td>23</td>
+                                <td>2021-03-15</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>안녕하세요 테스트입니다.</td>
+                                <td>23</td>
+                                <td>2021-03-15</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>안녕하세요 테스트입니다.</td>
+                                <td>23</td>
+                                <td>2021-03-15</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>안녕하세요 테스트입니다.</td>
+                                <td>23</td>
+                                <td>2021-03-15</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>안녕하세요 테스트입니다.</td>
+                                <td>23</td>
+                                <td>2021-03-15</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
         </div>
 
-		<div class="fullsection full4" pageNum="4">
+		<!-- <div class="fullsection full4" pageNum="4">
             <span>4 PAGE</span>
-        </div>
+        </div> -->
 
 		<!-- <div class="fullsection full5" pageNum="5">
             <span>5 PAGE</span>

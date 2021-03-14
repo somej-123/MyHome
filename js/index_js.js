@@ -14,7 +14,7 @@ function fullset(){
 	//마우스 휠 이벤트
 	$(window).on("mousewheel", function(event){
 		var page = $(".quick ul li.on");
-		console.log(page);
+		// console.log(page);
 		//alert(page.index()+1);  // 현재 on 되어있는 페이지 번호
 		if($("body").find("#fullpage:animated").length >= 1) return false;
 		console.log($("#fullpage:animated"));
