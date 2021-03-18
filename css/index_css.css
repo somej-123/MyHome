@@ -350,6 +350,9 @@ input::placeholder {
     border-radius: 5px;
     height: 40px;
     margin-top: 45px;
+    z-index: 999;
+    overflow: hidden;
+    cursor: pointer;
 }
 #manager_note_go{
     width: 200px;
@@ -360,11 +363,69 @@ input::placeholder {
     height: 40px;
     border-radius: 5px;
     margin-top: 45px;
+    overflow: hidden;
+    cursor: pointer;
 }
 .btn{
     position: relative;
     top: 8px;
+    z-index: 99;
 }
+/*물결 css*/
+.wave {
+    z-index: -1;
+    /* opacity: .4; */
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background: rgba(255, 192, 203, 0.4);
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    
+    transition-duration: 0.75s;
+    transition-property: margin-bottom;
+    transition-timing-function: ease-out;
+  }
+  #public_note_go:hover .wave {
+    margin-bottom: -240px;
+    animation: rotate 2000ms infinite linear;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+  .wave2 {
+    z-index: -1;
+    /* opacity: .4; */
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background: rgba(135, 207, 235, 0.4);
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-bottom: -301px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    
+    transition-duration: 0.75s;
+    transition-property: margin-bottom;
+    transition-timing-function: ease-out;
+  }
+  #manager_note_go:hover .wave2 {
+    margin-bottom: -240px;
+    animation: rotate 2000ms infinite linear;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
 /* .f3_Title_under{
     width: 125px;
     position: relative;
