@@ -175,7 +175,7 @@ ul, li{
 #full3_content{
     width: 1280px;
     position: relative;
-    top: 25%;
+    top: 30%;
     transform: translateY(-50%);
     margin: 0 auto;
 }
@@ -289,15 +289,25 @@ input::placeholder {
 }
 #right_content{
     width: 70%;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     border-radius: 10px;
     float: left;
+    position: relative;
 }
 #right_content::after{
     clear: both;
     content: "";
     position: relative;
+}
+#right_content>div{
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin: 0 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    /* border: 1px solid #fff; */
 }
 .f3_Title{
     color: #fff;
@@ -306,6 +316,54 @@ input::placeholder {
 #left_content p{
     color: #fff;
     line-height: 30px;
+}
+/* #center_Line{
+    position: absolute;
+    width: 1px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    content: "";
+    transform: translateX(-50%)translateY(-50%);
+} */
+#public_note{
+    text-align: center;
+    color: #fff;
+}
+#public_note p{
+    padding: 30px 40px 30px 40px;
+}
+#manager_note{
+    text-align: center;
+    color: #fff;
+}
+#manager_note p{
+    padding: 30px 40px 30px 40px;
+}
+#public_note_go{
+    width: 200px;
+    border: 1px solid #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 45px;
+}
+#manager_note_go{
+    width: 200px;
+    border: 1px solid #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 45px;
+}
+.btn{
+    position: relative;
+    top: 8px;
 }
 /* .f3_Title_under{
     width: 125px;
